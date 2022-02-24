@@ -1,17 +1,8 @@
 import userApi from '../api/user.js';
 var user = document.getElementById('user');
 
-
-function entrar(){
-    
+console.log("HELLO WORLD!");
+window.entrar = function(){
+    event.preventDefault();
+    console.log("Clique");
 }
-
-//arrow Funcion
-function use(){
-    userApi.forEach((item)=>{
-        var p = document.createElement("p");
-        user.appendChild(p);
-        
-    })
-}
-use();
