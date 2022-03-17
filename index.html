@@ -15,10 +15,11 @@
 <body>
     <div class="main d-flex justify-content-center align-items-center">
         <div class="login">
-            <form class="d-flex flex-column">
-                <input class="m-3" placeholder="Usuario" type="text" id='user'>
-                <input class="m-3" placeholder="Senha" type="password" id="">
-                <button onclick='entrar()' >Entrar</button>
+            <form class="d-flex flex-column" method="GET" >
+                <input class="m-3" name="usuario" placeholder="Usuario" type="text" id='user'>
+                <input class="m-3" name="senha" placeholder="Senha" type="password" id="">
+                <!-- <input type="submit" value="Entrar"> -->
+                <button class="button-one" onclick='entrar()' >Entrar</button>
             </form> 
         </div>
         <div id="user"></div>
